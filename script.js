@@ -1,7 +1,7 @@
 /* Task 1 */
 var heading = document.getElementById('heading');       
 console.log(heading.innerText);
-
+// heading.innerText = "Text changed";
 heading.innerHTML = "<h3> Text changed </h3>";
 
 /* Task 2 using plain JavaScript */
@@ -13,5 +13,20 @@ textBtn.addEventListener('click', function(event){
     paragraph.innerText = "Hello World";
     task2.appendChild(paragraph);
 });
+
+//Task 2b
+function changeBGcolor(event){
+    var body= document.getElementsByTagName('body')[0];
+    body.style.backgroundColor= event.target.innerText.toLowerCase();
+    
+    //Alternate way:
+    //  if(event.target.innerText=="Red"){
+    //      body.style.backgroundColor= 'red';
+    //  }
+    //  if(event.target.innerText=="Green"){
+    //      body.style.backgroundColor= 'green';
+    //  }
+}
+
 
 /* Task 4 using jQuery */
