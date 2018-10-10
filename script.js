@@ -1,5 +1,8 @@
 /* Task 1 */
+var heading = document.getElementById('heading');       
+console.log(heading.innerText);
 
+heading.innerHTML = "<h3> Text changed </h3>";
 
 /* Task 2 using plain JavaScript */
 
