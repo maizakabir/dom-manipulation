@@ -6,6 +6,7 @@ heading.innerHTML = "<h3> Text changed </h3>";
 
 /* Task 2 using plain JavaScript */
 //Task 2a
+
 var textBtn = document.getElementById('addText2');
 textBtn.addEventListener('click', function(event){
     var task2 = document.getElementById('task2a');
@@ -35,3 +36,8 @@ function redirectToGoogle (event)
 }
 
 /* Task 4 using jQuery */
+//Task 4a
+$('#addText4').click (function (event){
+    var paragraph= $('<p>').text('Hello World');
+    $('#task4a').append(paragraph);
+});
